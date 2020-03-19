@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -16,18 +16,35 @@
     </header>
 
     <main>
-        <form>
+        <form id="connexion">
             <fieldset>
-                <legend>Connexion</legend>
-                    <label for="identifiant">Identifiant</label>
-                    <input type="text" name="identifiant">
+                <legend>Connexion</legend>  
+                    <section>
+                        <label for="identifiant">Identifiant</label>
+                        <input type="text" name="identifiant" id="identifiant">
+                    </section>
+                    <section>
+                        <label for="motdepasse">Mot de passe</label>
+                        <input type="password" name="Mot de passe" id="motdepasse">
+                    </section>
+                    <section>
+                        <button type="button">&#10003;Valider</button>
+                    </section>
             </fieldset>
+            <section id="autre">
+                <section id="creation">
+                    <p>Tu est nouveau, et tu veux t'inscrire ? C'est par <a href="inscription.html">ici</a></p>
+                </section>
+                <section id="oublie">
+                    <p>Tu as encore oublié ton mot de passe ? Tu as le droit à une seconde <a href="motdepasse.html">chance</a></p>
+                </section>
+            </section>
         </form>
     </main>
 
     <footer>
         <a href="https://google.fr">Fuir</a>
-        <img src="cerveau1.png" alt="image-cerveau" title="Desuite l'esprit mal tourné" id="cerveau"/>
+        <img src="cerveau1.png" alt="image-cerveau" title="De suite l'esprit mal tourné" id="cerveau"/>
         <a href="https://github.com/martin-bozon" target="_blank">Github Martin Bozon</a>
     </footer>
 </body>

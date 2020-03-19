@@ -8,6 +8,7 @@ html
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        height: 100%;
     }
 body
     {
@@ -63,6 +64,7 @@ main
         flex-direction: row;
         flex-grow: 1;
         justify-content: center;
+        align-items: center;
     }
 form
     {
@@ -71,16 +73,25 @@ form
         background-color: thistle;
         border: 2px solid white;
         border-radius: 5px;
+        align-items: center;
+    }
+#connexion
+    {
+        height: 50vh;
+        width: 30vw;
     }
 fieldset
     {
         background-color: wheat;
         display: flex;
+        justify-content: center;
+        width: 23vw;
     }
 legend
     {
         display: flex;
-        flex-grow: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
         margin: 0;
         border: 1px solid black;
         border-top-left-radius: 40px;
@@ -91,7 +102,7 @@ footer
     {
         display: flex;
         flex-direction: row;
-        height: 25vh;
+        height: 12vh;
         align-items: center;
         border-top: 1px dashed black;
         justify-content: space-between;
@@ -113,6 +124,6 @@ footer a:hover
     }
 #cerveau
     {
-        height: 20vh;
+        height: 10vh;
         margin-left: 12vw;
     }
