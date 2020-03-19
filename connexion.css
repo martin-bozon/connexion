@@ -1,0 +1,118 @@
+@font-face
+    {
+        font-family: "Letter for Learners";
+        src: url("Letters for Learners.ttf");
+    }
+html
+    {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+body
+    {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+        font-family: "Letter for Learners";
+        background-image: url("connexion.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+header
+    {
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        align-items: center;
+        border-bottom: 1px dashed black;
+        background-color: rgba(255, 255, 255, 0.616);
+    }
+header nav 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-grow: 1;
+        height: 7vh;
+        font-size: 30px;
+        font-weight: bold;
+    }
+header a
+    {
+        text-decoration: none;
+        flex-grow: 0.05;
+        text-align: center;
+        border: 1px solid black;
+        border-top-left-radius:40px;
+        border-bottom-right-radius: 40px;
+        color: black;
+        background-color: white;
+    }
+header a:hover  
+    {
+        color: red;
+        font-weight: normal;
+        background-color: rgba(255, 255, 255, 0.616);
+    }
+main    
+    {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center;
+    }
+form
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: thistle;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+fieldset
+    {
+        background-color: wheat;
+        display: flex;
+    }
+legend
+    {
+        display: flex;
+        flex-grow: 1vw;
+        margin: 0;
+        border: 1px solid black;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        background-color: white;
+    }
+footer
+    {
+        display: flex;
+        flex-direction: row;
+        height: 25vh;
+        align-items: center;
+        border-top: 1px dashed black;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.616);
+    }
+footer a    
+    {
+        text-decoration: none;
+        flex-grow: 0.05;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+footer a:hover
+    {
+        color: red;
+        font-weight: normal;
+    }
+#cerveau
+    {
+        height: 20vh;
+        margin-left: 12vw;
+    }
