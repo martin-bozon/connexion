@@ -11,35 +11,36 @@
        <nav>
         <a href="connexion.html">Connexion</a>
         <h1>Bienvenue dans ma tête</h1>
-        <a href="inscription.html"><img src="edit.png" atl="lodo-édition"/>Inscription</a>
+        <a href="inscription.html">Inscription</a>
        </nav>
     </header>
 
     <main>
-        <form id="connexion">
-            <fieldset>
+        <form id="formconnexion">
+            <fieldset id="fsconnexion">
                 <legend>Connexion</legend>  
-                    <section>
+                    <section class="connexion">
                         <label for="identifiant">Identifiant</label>
                         <input type="text" name="identifiant" id="identifiant">
                     </section>
-                    <section>
+                    <section class="connexion">
                         <label for="motdepasse">Mot de passe</label>
-                        <input type="password" name="Mot de passe" id="motdepasse">
-                    </section>
-                    <section>
-                        <button type="button">&#10003;Valider</button>
+                        <input type="password" name="motdepasse" id="motdepasse">
                     </section>
             </fieldset>
-            <section id="autre">
-                <section id="creation">
-                    <p>Tu est nouveau, et tu veux t'inscrire ? C'est par <a href="inscription.html">ici</a></p>
-                </section>
-                <section id="oublie">
-                    <p>Tu as encore oublié ton mot de passe ? Tu as le droit à une seconde <a href="motdepasse.html">chance</a></p>
-                </section>
+            <section>
+                <button type="button"><span>&#10003;</span>Valider</button>
             </section>
         </form>
+        <section id="autre">
+            <section class="autre">
+                <p>Tu est nouveau, et tu veux t'inscrire ? C'est par <a href="inscription.html">&#8658; ici</a></p>
+            </section>
+            <section class="autre">
+                <p>Tu as encore oublié ton mot de passe ? Tu as le droit à une seconde <a href="motdepasse.html">chance</a></p>
+            </section>
+        </section>
+        
     </main>
 
     <footer>
