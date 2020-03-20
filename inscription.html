@@ -16,25 +16,25 @@
      </header>
 
      <main>
-        <form id="forminsciption">
+        <form id="forminsciption" action="connexion.html">
             <fieldset id="fsinscription">
                 <legend>Inscris toi pour visiter les recoins de ma tête</legend>
                     <section id="login">
                         <section>
                             <label for="Identifiant">Identifiant</label>
-                            <input type="text" name="identifiant" id="identifiant"/>
+                            <input type="text" name="identifiant" id="identifiant" required/>
                         </section>
                         <section>
                             <label for="motdepasse">Mot de passe</label>
-                            <input type="password" name="motdepasse" id="motdepasse"/>
+                            <input type="password" name="motdepasse" id="motdepasse" required/>
                         </section>
                         <section>
                             <label for="confmotdepasse">Confirmer Mot de passe</label>
-                            <input type="password" name="confmotdepasse" id="confmotdepasse"/>
+                            <input type="password" name="confmotdepasse" id="confmotdepasse" required/>
                         </section>
                         <section>
                             <label for="email">Ton email</label>
-                            <input type="email" name="email" id="email"/>
+                            <input type="email" name="email" id="email" required/>
                         </section>
                     </section>
                     <section id="infoperso">
@@ -45,16 +45,39 @@
                         <section>
                             <label for="sexe">Genre :</label>
                                 <section>
+                                    <input type="radio" name="sexe" id="femme" required/>
                                     <label for="femme">Femme</label>
-                                    <input type="radio" name="sexe" id="femme"/>
+                                    <input type="radio" name="sexe" id="homme" required/>
                                     <label for="homme">Homme</label>
-                                    <input type="radio" name="sexe" id="homme"/>
-                                    <label for="autre">Autre: précise ou pas</label>
-                                    <input type="radio" name="sexe" id="autre"/>
+                                    <input type="radio" name="sexe" id="saitpas" required/>
+                                    <label for="homme">Ne sais pas</label>
                                 </section>
+                        </section>
+                        <section>
+                            <label for="tel">Téléphone</label>
+                            <input type="tel" name="tel" id="tel"/>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Sports</label>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Lecture</label>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Jeux vidéos</label>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Rien</label>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Te tartiner la biscotte</label>
+                            <input type="checkbox" name="hobbies" id="hobbies"/>
+                            <label for="hobbies">Lecture</label>
+                        </section>
+                        <section>
+                            <label for="presentation">Présente toi brièvement</label>
+                            <textarea name="presenation" id="presentation" rows="5" cols="33">Bonjour...</textarea>
                         </section>
                     </section>
             </fieldset>
+            <input type="submit" value="Créer" id="bouton"/>
         </form>
      </main>
 

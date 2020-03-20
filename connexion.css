@@ -110,6 +110,7 @@ label
     {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 7vw;
         height: 5vh;
         border: 1px solid white;
@@ -117,7 +118,7 @@ label
         background-color: black;
         color: white;
         font-size: 17px;
-        padding-bottom: 1vh;
+        padding: 0;
     }
 #bouton:hover
     {
