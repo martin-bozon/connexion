@@ -100,26 +100,6 @@ fieldset
         border: 1px solid white;
         border-radius: 10px;
     }
-#formconnexion
-    {
-        height: 30vh;
-        width: 45vw;
-        margin: 0;
-    }
-
-#fsconnexion
-    {
-        width: 30vw;
-        height: 15vh;
-    }
-.connexion
-    {
-        display: flex;
-        /* flex-direction: column; */
-        width: 23vw;
-        justify-content: space-between;
-        margin-bottom: 1.5vh;
-    }
 label
     {
         font-size: 20px;
@@ -138,6 +118,7 @@ button
         background-color: black;
         color: white;
         font-size: 17px;
+        padding-bottom: 1vh;
     }
 button:hover
     {
@@ -145,31 +126,63 @@ button:hover
         color: red;
         border: 1px solid black;
     }
-#autre
+    /* Connexion */
+#formconnexion
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        width: 40vw;
+        margin: 0;
+    }
+#fsconnexion
+    {
+        width: 30vw;
+        height: 22vh;
+        display: flex;
+        justify-content: center;
+    }
+.connexion
+    {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+#info
     {
         display: flex;
         flex-direction: column;
         width: 50vw;
+        height: 20vh;
         background-color: rgba(68, 71, 76, 0.452);
         backdrop-filter: blur(5px);
         border: 2px solid white;
         border-radius: 20px;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         color: white;
         text-align: center;
         font-size: 25px;
+        margin: 0;
     }
-#autre a
+#info a
     {
         font-weight: bold;
         text-decoration: none;
         color:rgb(196, 14, 14);
     }
-#autre a:hover
+#info a:hover
 {
     text-decoration: underline;
 }
+#info p
+    {
+        height: 5vh;
+        margin: 0;
+    }
+    /* Mot de passe */
 #formmdp
     {
         display: flex;
@@ -201,6 +214,12 @@ button:hover
         justify-content: space-evenly;
         margin-top: 1vh;
     }
+#btnmpd
+    {
+        display: flex;
+        justify-content: center;
+    }
+    /* inscription */
 footer
     {
         display: flex;
