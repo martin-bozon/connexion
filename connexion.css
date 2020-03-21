@@ -18,7 +18,7 @@ body
         margin: 0;
         font-family: "Letter for Learners";
         background-image: url("connexion.jpg");
-        background-size: cover;
+        /* background-size: cover; */
         background-position: center;
     }
 header
@@ -59,6 +59,7 @@ header a:hover
         background-color: white;
         border: 1px solid black;
     }
+    /* Géneral */
 main    
     {
         display: flex;
@@ -74,7 +75,7 @@ form
         background-color: rgba(68, 71, 76, 0.452);
         backdrop-filter: blur(5px);
         border: 2px solid white;
-        border-radius: 100px;
+        border-radius: 20px;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -98,13 +99,28 @@ fieldset
         text-align: center;
         margin-top: 2vh;
         border: 1px solid white;
-        border-radius: 10px;
+        border-radius: 100px;
     }
 label
     {
         font-size: 20px;
         font-weight: bold;
         color: white;
+    }
+input:focus, textarea:focus, select:focus
+    {
+        background-color: rgba(68, 71, 76, 0.452);
+        color: white;
+    }
+.oblig:after
+    {
+        content: " *";
+        color: greenyellow;
+    }
+#oblig::after
+    {
+        content: " *";
+        color: greenyellow;   
     }
 .bouton
     {
@@ -125,6 +141,16 @@ label
         background-color: white;
         color: red;
         border: 1px solid black;
+    }
+p
+    {
+        color: white;
+        font-size: 25px;
+        margin: 0;
+    }
+#icon
+    {
+        image-orientation: flip;
     }
     /* Connexion */
 #formconnexion
@@ -162,9 +188,7 @@ label
         border-radius: 20px;
         justify-content: space-around;
         align-items: center;
-        color: white;
         text-align: center;
-        font-size: 25px;
         margin: 0;
     }
 #info a
@@ -220,34 +244,75 @@ label
         justify-content: center;
     }
     /* inscription */
+#bodyinscription
+    {
+        height: 140vh;
+    }
 #forminsciption
     {
         width: 60%;
-        height: 100%;
+        height: 95%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 #fslogin
     {
-        height: 60%;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 50%;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 100px;
+        background-color: rgba(12, 14, 107, 0.781);
     }
 #fsinfoperso
     {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        border-radius: 100px;
+        width: 50%;
         height: 90%;
+        background-color: rgba(12, 14, 107, 0.781);
+        align-items: center;
     }
 .inscription
     {
         display: flex;
+        flex-direction: column;
         height: 100%;
-        flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 2%;
     }
-#boutonisncrip
+.inscription section
     {
-        margin-top: 2vh;
-        /* margin-bottom: 2v; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.choix
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.choix section
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.souligne
+    {
+        text-decoration: underline;
+    }
+#fin
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 footer
     {

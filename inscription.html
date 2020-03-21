@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="icon.png" id="icon">
     <link rel="stylesheet" href="connexion.css" />
 </head>
 
-<body>
+<body id="bodyinscription">
     <header>
         <nav>
             <a href="connexion.html">Connexion</a>
@@ -19,28 +19,28 @@
 
     <main>
         <form id="forminsciption" action="connexion.html">
-            <fieldset id="fslogin">
+            <section id="fslogin">
                 <legend>Login</legend>
                 <section class="inscription">
                     <section>
-                        <label for="Identifiant">Identifiant</label>
+                        <label for="Identifiant" class="oblig">Identifiant</label>
                         <input type="text" name="identifiant" id="identifiant" required />
                     </section>
                     <section>
-                        <label for="motdepasse">Mot de passe</label>
+                        <label for="motdepasse" class="oblig">Mot de passe</label>
                         <input type="password" name="motdepasse" id="motdepasse" required />
                     </section>
                     <section>
-                        <label for="confmotdepasse">Confirmer Mot de passe</label>
+                        <label for="confmotdepasse" class="oblig">Confirmer Mot de passe</label>
                         <input type="password" name="confmotdepasse" id="confmotdepasse" required />
                     </section>
                     <section>
-                        <label for="email">Ton email</label>
+                        <label for="email" class="oblig">Ton email</label>
                         <input type="email" name="email" id="email" required />
                     </section>
                 </section>
-            </fieldset>
-            <fieldset id="fsinfoperso">
+            </section>
+            <section id="fsinfoperso">
                 <legend>Infos personnelles</legend>
                 <section class="inscription">
                     <section>
@@ -55,8 +55,8 @@
                         <label for="date">Date d'arriver sur Terre</label>
                         <input type="date" name="date" id="date" value="2000-01-01" min="1920-01-01" max="2020-01-01" />
                     </section>
-                    <section>
-                        <label for="sexe">Genre :</label>
+                    <section class="choix">
+                        <label for="sexe" class="souligne" id="oblig">Genre :</label>
                         <section>
                             <input type="radio" name="sexe" id="femme" required />
                             <label for="femme">Femme</label>
@@ -71,26 +71,58 @@
                         <input type="tel" name="tel" id="tel" />
                     </section>
                     <section>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Sports</label>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Lecture</label>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Jeux vidéos</label>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Rien</label>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Te tartiner la biscotte</label>
-                        <input type="checkbox" name="hobbies" id="hobbies" />
-                        <label for="hobbies">Lecture</label>
+                        <label for="niveau-d'etude" class="oblig">Niveau d'étude</label>
+                        <select name="niveau-d'etude" id="niveau-d'etude" required>
+                            <option value="">--Choisis ton niveau d'étude--</option>
+                            <option value="Rien">Rien</option>
+                            <option value="brevet">brevet</option>
+                            <option value="BAC">BAC</option>
+                            <option value="DEUG">DEUG</option>
+                            <option value="Licence">Licence</option>
+                            <option value="Master">Master</option>
+                            <option value="Doctorat">Doctorat</option>
+                            <option value="No life des études">No life des études</option>
+                        </select>
+                    </section>
+                    <section class="choix">
+                        <label for="hobbies" class="souligne">Loisirs :</label>
+                        <section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="sports" />
+                                <label for="sports">Sports</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="voyage" />
+                                <label for="voyage">voyage</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="jeux" />
+                                <label for="jeux">Jeux vidéos</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="rien" />
+                                <label for="rien">Rien</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="biscotte" />
+                                <label for="biscotte">Te tartiner la biscotte</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="hobbies" id="lecture" />
+                                <label for="lecture">Lecture</label>
+                            </section>
+                        </section>
                     </section>
                     <section>
                         <label for="presentation">Présente toi brièvement</label>
                         <textarea name="presenation" id="presentation" rows="5" cols="33">Bonjour...</textarea>
                     </section>
                 </section>
-            </fieldset>
-            <input type="submit" value="Créer" class="bouton" id="boutonisncrip"/>
+            </section>
+            <section id="fin">
+            <input type="submit" value="Créer" class="bouton"/>
+            <p class="oblig">Champs obligatoire</p>
+            </section>
         </form>
     </main>
 
