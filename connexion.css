@@ -106,7 +106,7 @@ label
         font-weight: bold;
         color: white;
     }
-#bouton
+.bouton
     {
         display: flex;
         justify-content: center;
@@ -120,7 +120,7 @@ label
         font-size: 17px;
         padding: 0;
     }
-#bouton:hover
+.bouton:hover
     {
         background-color: white;
         color: red;
@@ -220,6 +220,35 @@ label
         justify-content: center;
     }
     /* inscription */
+#forminsciption
+    {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+#fslogin
+    {
+        height: 60%;
+    }
+#fsinfoperso
+    {
+        height: 90%;
+    }
+.inscription
+    {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+    }
+#boutonisncrip
+    {
+        margin-top: 2vh;
+        /* margin-bottom: 2v; */
+    }
 footer
     {
         display: flex;

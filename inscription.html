@@ -1,90 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="connexion.css"/>
+    <link rel="stylesheet" href="connexion.css" />
 </head>
+
 <body>
     <header>
         <nav>
-         <a href="connexion.html">Connexion</a>
-         <h1>Bienvenue dans ma tête</h1>
-         <a href="inscription.html"><img src="edit.png" atl="lodo-édition"/>Inscription</a>
+            <a href="connexion.html">Connexion</a>
+            <h1>Bienvenue dans ma tête</h1>
+            <a href="inscription.html"><img src="edit.png" atl="lodo-édition" />Inscription</a>
         </nav>
-     </header>
+    </header>
 
-     <main>
+    <main>
         <form id="forminsciption" action="connexion.html">
-            <fieldset id="fsinscription">
-                <legend>Inscris toi pour visiter les recoins de ma tête</legend>
-                    <section id="login">
-                        <section>
-                            <label for="Identifiant">Identifiant</label>
-                            <input type="text" name="identifiant" id="identifiant" required/>
-                        </section>
-                        <section>
-                            <label for="motdepasse">Mot de passe</label>
-                            <input type="password" name="motdepasse" id="motdepasse" required/>
-                        </section>
-                        <section>
-                            <label for="confmotdepasse">Confirmer Mot de passe</label>
-                            <input type="password" name="confmotdepasse" id="confmotdepasse" required/>
-                        </section>
-                        <section>
-                            <label for="email">Ton email</label>
-                            <input type="email" name="email" id="email" required/>
-                        </section>
+            <fieldset id="fslogin">
+                <legend>Login</legend>
+                <section class="inscription">
+                    <section>
+                        <label for="Identifiant">Identifiant</label>
+                        <input type="text" name="identifiant" id="identifiant" required />
                     </section>
-                    <section id="infoperso">
-                        <section>
-                            <label for="date">Date d'arriver sur Terre</label>
-                            <input type="date" name="date" id="date" value="2000-01-01" min="1920-01-01" max="2020-01-01"/>
-                        </section>
-                        <section>
-                            <label for="sexe">Genre :</label>
-                                <section>
-                                    <input type="radio" name="sexe" id="femme" required/>
-                                    <label for="femme">Femme</label>
-                                    <input type="radio" name="sexe" id="homme" required/>
-                                    <label for="homme">Homme</label>
-                                    <input type="radio" name="sexe" id="saitpas" required/>
-                                    <label for="homme">Ne sais pas</label>
-                                </section>
-                        </section>
-                        <section>
-                            <label for="tel">Téléphone</label>
-                            <input type="tel" name="tel" id="tel"/>
-                        </section>
-                        <section>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Sports</label>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Lecture</label>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Jeux vidéos</label>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Rien</label>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Te tartiner la biscotte</label>
-                            <input type="checkbox" name="hobbies" id="hobbies"/>
-                            <label for="hobbies">Lecture</label>
-                        </section>
-                        <section>
-                            <label for="presentation">Présente toi brièvement</label>
-                            <textarea name="presenation" id="presentation" rows="5" cols="33">Bonjour...</textarea>
-                        </section>
+                    <section>
+                        <label for="motdepasse">Mot de passe</label>
+                        <input type="password" name="motdepasse" id="motdepasse" required />
                     </section>
+                    <section>
+                        <label for="confmotdepasse">Confirmer Mot de passe</label>
+                        <input type="password" name="confmotdepasse" id="confmotdepasse" required />
+                    </section>
+                    <section>
+                        <label for="email">Ton email</label>
+                        <input type="email" name="email" id="email" required />
+                    </section>
+                </section>
             </fieldset>
-            <input type="submit" value="Créer" id="bouton"/>
+            <fieldset id="fsinfoperso">
+                <legend>Infos personnelles</legend>
+                <section class="inscription">
+                    <section>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" />
+                    </section>
+                    <section>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" />
+                    </section>
+                    <section>
+                        <label for="date">Date d'arriver sur Terre</label>
+                        <input type="date" name="date" id="date" value="2000-01-01" min="1920-01-01" max="2020-01-01" />
+                    </section>
+                    <section>
+                        <label for="sexe">Genre :</label>
+                        <section>
+                            <input type="radio" name="sexe" id="femme" required />
+                            <label for="femme">Femme</label>
+                            <input type="radio" name="sexe" id="homme" required />
+                            <label for="homme">Homme</label>
+                            <input type="radio" name="sexe" id="saitpas" required />
+                            <label for="homme">Ne sais pas</label>
+                        </section>
+                    </section>
+                    <section>
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" name="tel" id="tel" />
+                    </section>
+                    <section>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Sports</label>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Lecture</label>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Jeux vidéos</label>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Rien</label>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Te tartiner la biscotte</label>
+                        <input type="checkbox" name="hobbies" id="hobbies" />
+                        <label for="hobbies">Lecture</label>
+                    </section>
+                    <section>
+                        <label for="presentation">Présente toi brièvement</label>
+                        <textarea name="presenation" id="presentation" rows="5" cols="33">Bonjour...</textarea>
+                    </section>
+                </section>
+            </fieldset>
+            <input type="submit" value="Créer" class="bouton" id="boutonisncrip"/>
         </form>
-     </main>
+    </main>
 
-     <footer>
+    <footer>
         <a href="https://google.fr">Fuir</a>
-        <img src="cerveau1.png" alt="image-cerveau" title="Desuite l'esprit mal tourné" id="cerveau"/>
+        <img src="cerveau1.png" alt="image-cerveau" title="Desuite l'esprit mal tourné" id="cerveau" />
         <a href="https://github.com/martin-bozon" target="_blank">Github Martin Bozon</a>
     </footer>
 </body>
+
 </html>
