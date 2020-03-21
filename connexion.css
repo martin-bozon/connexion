@@ -109,7 +109,7 @@ label
     }
 input:focus, textarea:focus, select:focus
     {
-        background-color: rgba(68, 71, 76, 0.452);
+        background-color: rgba(103, 107, 112, 0.74);
         color: white;
     }
 .oblig:after
@@ -195,7 +195,7 @@ p
     {
         font-weight: bold;
         text-decoration: none;
-        color:rgb(196, 14, 14);
+        color:greenyellow;
     }
 #info a:hover
 {
