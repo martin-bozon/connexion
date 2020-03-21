@@ -107,6 +107,12 @@ label
         font-weight: bold;
         color: white;
     }
+input, textarea, select
+    {
+        border: 1px solid black;
+        border-radius: 10px;
+        outline: none;
+    }
 input:focus, textarea:focus, select:focus
     {
         background-color: rgba(103, 107, 112, 0.74);
